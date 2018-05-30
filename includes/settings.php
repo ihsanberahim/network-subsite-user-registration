@@ -73,7 +73,7 @@ class NSUR_Settings {
                                                                                                 'std'           => false,                                  
                                                                                                 'label'         => __( 'Allow Users to Register', 'network-subsite-user-registration' ),
                                                                                                 'desc'          => __( "Enabling this option allows the public to register with this local site. "
-                                                                                                                        . "The 'subscriber' role will be granted.", 'network-subsite-user-registration' ),
+                                                                                                                        . "The " .get_site_option( 'default_user_role', 'subscriber'). " role will be granted.", 'network-subsite-user-registration' ),
                                                                                                 'type'          => 'field_checkbox_option',                                                                                                                
                                                                                                 'cb_label'      => _x( 'Enable', 'enable the setting option.', 'network-subsite-user-registration' ), 
                                                                                                 ),		
